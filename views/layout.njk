@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+
+    {% block head %}{% endblock %}
+
+    <link rel="stylesheet" href="/styles/global.css">
+    
+    {% block title %}
+        <title>Gym Manager</title>
+    {% endblock title %}
+
+</head>
+<body>
+    <header>
+        <div class="links">
+            <a href="/instructors">Instructors</a>
+            <a href="/members">Members</a>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+    <script src="/scripts.js"></script>
+</body>
+</html>
